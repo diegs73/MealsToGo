@@ -25,9 +25,11 @@ export const SettingsScreen = ({ navigation }) => {
     setPhoto(photoUri);
   };
 
-  useFocusEffect(() => {
-    getProfilePicture(user);
-  }, [user]);
+  useFocusEffect(
+    React.useCallback(() => {
+      getProfilePicture(user);
+    }, [user])
+  );
 
   return (
     <SafeArea>

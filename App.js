@@ -12,25 +12,18 @@ import {
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 
-// const firebaseConfig = {
-//   apiKey: 'api-key',
-//   authDomain: 'project-id.firebaseapp.com',
-//   databaseURL: 'https://project-id.firebaseio.com',
-//   projectId: 'project-id',
-//   storageBucket: 'project-id.appspot.com',
-//   messagingSenderId: 'sender-id',
-//   appId: 'app-id',
-//   measurementId: 'G-measurement-id',
-// };
-
 const firebaseConfig = {
-  apiKey: "AIzaSyBstBmjw13_mx_a6l2M7BtDi3sWfyY4GXc",
-  authDomain: "mealstogo-588f7.firebaseapp.com",
-  projectId: "mealstogo-588f7",
-  storageBucket: "mealstogo-588f7.appspot.com",
-  messagingSenderId: "831273455423",
-  appId: "1:831273455423:web:e26024d757131b02f7cd8a",
-};
+   apiKey: 'api-key',
+   authDomain: 'project-id.firebaseapp.com',
+   databaseURL: 'https://project-id.firebaseio.com',
+   projectId: 'project-id',
+   storageBucket: 'project-id.appspot.com',
+   messagingSenderId: 'sender-id',
+   appId: 'app-id',
+   measurementId: 'G-measurement-id',
+ };
+
+
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);

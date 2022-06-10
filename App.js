@@ -15,12 +15,12 @@ import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 const firebaseConfig = {
    apiKey: 'api-key',
    authDomain: 'project-id.firebaseapp.com',
-  databaseURL: 'https://project-id.firebaseio.com',
+   databaseURL: 'https://project-id.firebaseio.com',
    projectId: 'project-id',
    storageBucket: 'project-id.appspot.com',
    messagingSenderId: 'sender-id',
    appId: 'app-id',
-  measurementId: 'G-measurement-id',
+   measurementId: 'G-measurement-id',
  };
 
 

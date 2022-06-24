@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ScrollView } from "react-native";
-import { List } from "react-native-paper";
+import { List, Divider } from "react-native-paper";
 import { RestauranInfoCard } from "../components/restaurant-info-card.component";
 
 import { SafeArea } from "../../../components/utility/safe-area.component";
@@ -23,8 +23,10 @@ export const RestaurantDetailScreen = ({ route }) => {
           onPress={() => setBreakfastExpanded(!breakfastExpanded)}
         >
           <List.Item title="Eggs Benedict" />
+          <Divider />
           <List.Item title="Classic Breakfast" />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Lunch"
@@ -33,9 +35,14 @@ export const RestaurantDetailScreen = ({ route }) => {
           onPress={() => setLunchExpanded(!lunchExpanded)}
         >
           <List.Item title="Burger w/ Fries" />
+          <Divider />
+
           <List.Item title="Steak Sandwich" />
+          <Divider />
           <List.Item title="Mushroom Soup" />
+          <Divider />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Dinner"
@@ -44,9 +51,15 @@ export const RestaurantDetailScreen = ({ route }) => {
           onPress={() => setDinnerExpanded(!dinnerExpanded)}
         >
           <List.Item title="Spaghetti Bolognese" />
+          <Divider />
+
           <List.Item title="Veal Cutlet with Chicken Mushroom Rotini" />
+          <Divider />
+
           <List.Item title="Steak Frites" />
+          <Divider />
         </List.Accordion>
+        <Divider />
 
         <List.Accordion
           title="Drinks"
@@ -55,10 +68,19 @@ export const RestaurantDetailScreen = ({ route }) => {
           onPress={() => setDrinksExpanded(!drinksExpanded)}
         >
           <List.Item title="Coffee" />
+          <Divider />
+
           <List.Item title="Tea" />
+          <Divider />
+
           <List.Item title="Modelo" />
+          <Divider />
+
           <List.Item title="Coke" />
+          <Divider />
+
           <List.Item title="Fanta" />
+          <Divider />
         </List.Accordion>
       </ScrollView>
     </SafeArea>
